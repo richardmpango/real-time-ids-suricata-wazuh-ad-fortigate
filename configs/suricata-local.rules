@@ -1,0 +1,2 @@
+# Local Suricata test rule used in the lab
+alert icmp any any -> any any (msg:"LAB TEST - ICMP Ping Detected"; sid:1000001; rev:1;)

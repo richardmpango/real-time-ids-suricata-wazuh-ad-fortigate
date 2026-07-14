@@ -1,0 +1,14 @@
+# FortiGate 60D syslog forwarding to Wazuh manager 192.168.5.3
+config log syslogd setting
+    set status enable
+    set server "192.168.5.3"
+    set port 514
+    set mode udp
+    set facility local7
+    set format default
+end
+
+config log eventfilter
+    set system enable
+    set user enable
+end
